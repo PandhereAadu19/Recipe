@@ -112,8 +112,60 @@ h3{
     margin-top: 1.8em;
     color: #202030;
 }
-@media screen and (max-width: 500px) {
-    .container{
+@media screen and (max-width: 600px) {
+    .container {
         font-size: 14px;
+        padding: 2em; /* Adjust padding for smaller screens */
+        max-width: 100%; /* Allow the container to take the full width of the viewport */
+        margin: 0; /* Remove the left and right margin for full-width container */
+    }
+
+    .search-container {
+        grid-template-columns: 1fr; /* Make the search container full-width */
+        gap: 1em;
+    }
+
+    .search-container button {
+        width: 100%; /* Make the button full-width */
+        margin-top: 1em; /* Add some space between input and button */
+    }
+
+    img {
+        width: 100%; /* Make images take the full width of the container */
+    }
+
+    .details {
+        margin: 1em 0; /* Adjust the margin */
+    }
+
+    #show-recipe {
+        left: 50%; /* Center the button */
+        transform: translateX(-50%);
+        width: 100%; /* Make the button full-width */
+        margin-top: 1em;
+    }
+
+    #recipe {
+        border-radius: 0; /* Remove border-radius for full-width container */
+    }
+
+    #recipe pre {
+        padding: 1em; /* Adjust padding */
+    }
+
+    #hide-recipe {
+        left: 50%; /* Center the button */
+        transform: translateX(-50%);
+        width: 100%; /* Make the button full-width */
+        margin-top: 1em;
+    }
+
+    ul {
+        grid-template-columns: 1fr; /* Make the list items full-width */
+        padding: 1em;
+    }
+
+    h3 {
+        margin-top: 1em; /* Adjust margin */
     }
 }

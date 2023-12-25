@@ -2,7 +2,6 @@
 let result = document.getElementById("result");
 let searchBtn = document.getElementById("search-btn");
 let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
-//let api = "377ad87630f946d3b71b3ff960fd30e7";
 
 
 searchBtn.addEventListener("click", ()=>{
